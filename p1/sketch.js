@@ -7,7 +7,7 @@ let daddy;
 
 function preload()
 {
-    daddy = loadImage("daddy_pixeled.jpg");
+    daddy = loadImage("pixled.jpg");
 }
 
 function setup()
