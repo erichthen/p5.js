@@ -1,3 +1,3 @@
 ## lebron_to_ascii  
 
-![](daddy_ascii.png)
+![](p1/lebron_ascii.png)
