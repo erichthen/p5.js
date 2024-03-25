@@ -36,14 +36,13 @@ class Particle{
     show = function() {
     
        
-            colorMode(HSB, 360, 100, 100, 1); // Define HSB ranges
-            let hueValue = 330; // Hue for red
-            // Map the y position to saturation: 0 at the top (white), 100 at the bottom (red)
+            colorMode(HSB, 360, 100, 100, 1); 
+            let hueValue = 330; 
             let sat = map(this.pos.y, 0, height, 50, 100);
-            // Map the y position to brightness: 100 at the top (white), 50 at the bottom (dark red)
+
             let bright = map(this.pos.y, 0, height, 100, 20);
             strokeWeight(1);
-            stroke(hueValue, sat, bright, 0.1); // Saturation and brightness vary with y position
+            stroke(hueValue, sat, bright, 0.1);
             line(this.pos.x, this.pos.y, this.previous_pos.x, this.previous_pos.y);
             this.updatePrevious(); 
             
