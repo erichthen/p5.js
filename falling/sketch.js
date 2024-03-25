@@ -22,13 +22,13 @@ let hueValue = 200;
 
 function setup()
 {
-    createCanvas(600, 700);
-    colorMode(HSB, 360, 255, 255);
+    createCanvas(1200, 800);
+    colorMode(HSB, 360, 100, 100);
     cols = width / w;
     rows = height / w;
     grid = make_grid(cols, rows);
     h = height / rows;
-    frameRate(240);
+    frameRate(60);
 
     for (let i = 0; i < cols; i++)
     {
@@ -72,46 +72,44 @@ function mouseDragged()
 }
 
 function draw() {
-    background(0);
 
-    for (let i = 0; i < cols; i++) 
-    {
-        for (let j = 0; j < rows; j++) 
-        {
-            noStroke();
-            if (grid[i][j] > 0) 
-            {
-                fill(grid[i][j], 255, 255);
-                let x = i * w;
-                let y = j * w;
-                square(x, y, w); 
-            }
-        }
-    }
-    // buffer
-    let next_grid = make_grid(cols, rows);
-    for (let i = 0; i < cols; i++) {
-        for (let j = 0; j < rows; j++) {
-            let state = grid[i][j];
-            if (state > 0)  {
 
-                let cell_below = (j + 1 < rows) ? grid[i][j + 1] : 1; // If j + 1 is out of bounds, consider it blocked
-                let dir = random(1) < 0.5 ? -1 : 1;
-                let below_a = (i + dir >= 0 && i + dir < cols && j + 1 < rows) ? grid[i + dir][j + 1] : 1;
-                let below_b = (i - dir >= 0 && i - dir < cols && j + 1 < rows) ? grid[i - dir][j + 1] : 1;
-
-                if (cell_below === 0) {
-                    next_grid[i][j + 1] = grid[i][j];
-                } else if (below_a === 0) {
-                    next_grid[i + dir][j + 1] = grid[i][j];
-                } else if (below_b === 0) {
-                    next_grid[i - dir][j + 1] = grid[i][j];
-                } else {
-                    next_grid[i][j] = grid[i][j];
+        colorMode(180, 100, 100)
+        background(180, 80, 100);
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                noStroke();
+                if (grid[i][j] > 0) {
+                    fill(grid[i][j], 255, 255);
+                    let x = i * w;
+                    let y = j * w;
+                    square(x, y, w); 
                 }
             }
         }
+        let next_grid = make_grid(cols, rows);
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                let state = grid[i][j];
+                if (state > 0) {
+                    let cell_below = (j + 1 < rows) ? grid[i][j + 1] : 1;
+                    let dir = random(1) < 0.5 ? -1 : 1;
+                    let below_a = (i + dir >= 0 && i + dir < cols && j + 1 < rows) ? grid[i + dir][j + 1] : 1;
+                    let below_b = (i - dir >= 0 && i - dir < cols && j + 1 < rows) ? grid[i - dir][j + 1] : 1;
+                    if (cell_below === 0) {
+                        next_grid[i][j + 1] = grid[i][j];
+                    } else if (below_a === 0) {
+                        next_grid[i + dir][j + 1] = grid[i][j];
+                    } else if (below_b === 0) {
+                        next_grid[i - dir][j + 1] = grid[i][j];
+                    } else {
+                        next_grid[i][j] = grid[i][j];
+                    }
+                }
+            }
+        }
+        //draw the sun
+        grid = next_grid;
+        fill(60, 255, 255);
+        ellipse(width - 130, 130, 150, 150);
     }
-
-    grid = next_grid;
-}
