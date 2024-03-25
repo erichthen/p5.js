@@ -11,4 +11,4 @@
 ## particle_flow  
 ![](particle_flow/flow_preview.png)  
 **simulation video**  
-[video](https://youtube.com/shorts/zmPVfvNd2b0?feature=share)
+[video](https://youtu.be/0DaMUsPOVCY)
