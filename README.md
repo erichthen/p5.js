@@ -6,7 +6,8 @@
 
 ![](falling/illustration.png)    
 **falling sand video**  
-[video (right click to open in a new tab)](https://youtube.com/shorts/zmPVfvNd2b0?feature=share)
+[video] (https://youtu.be/9AmTqQETuKI)  
+
 
 ## particle_flow  
 ![](particle_flow/flow_preview.png)  
