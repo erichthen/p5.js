@@ -5,5 +5,5 @@
 ## falling_cubes  
 
 ![](falling/illustration.png)    
-**Video**  
-![watch here]([falling/simulation.mp4](https://youtube.com/shorts/zmPVfvNd2b0?feature=share)https://youtube.com/shorts/zmPVfvNd2b0?feature=share) 
+## Video  
+[Watch the Simulation on YouTube](https://youtube.com/shorts/zmPVfvNd2b0?feature=share)
