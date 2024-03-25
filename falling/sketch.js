@@ -28,7 +28,7 @@ function setup()
     rows = height / w;
     grid = make_grid(cols, rows);
     h = height / rows;
-    frameRate(30);
+    frameRate(120);
 
     for (let i = 0; i < cols; i++)
     {
@@ -94,7 +94,7 @@ function draw() {
         for (let j = 0; j < rows; j++) {
             let state = grid[i][j];
             if (state > 0)  {
-                
+
                 let cell_below = (j + 1 < rows) ? grid[i][j + 1] : 1; // If j + 1 is out of bounds, consider it blocked
                 let dir = random(1) < 0.5 ? -1 : 1;
                 let below_a = (i + dir >= 0 && i + dir < cols && j + 1 < rows) ? grid[i + dir][j + 1] : 1;
