@@ -28,7 +28,7 @@ function setup()
     rows = height / w;
     grid = make_grid(cols, rows);
     h = height / rows;
-    frameRate(120);
+    frameRate(240);
 
     for (let i = 0; i < cols; i++)
     {
