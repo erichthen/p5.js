@@ -14,7 +14,7 @@ function setup(){
     rows = floor(height / scl);
 
     flowfield = new Array(cols * rows);
-    for (let i = 0; i < 500 /*play with*/; i++){
+    for (let i = 0; i < 200 /*play with*/; i++){
         particles.push(new Particle()); 
     }
     background(255);
@@ -28,7 +28,7 @@ function draw()
         var x_off = 0;
         for (var x = 0; x < cols; x++){
             var index = x + y * cols;
-            var angle  = noise(x_off, y_off, z_off) * TWO_PI; //play with - multiply 2pi by a const
+            var angle  = noise(x_off, y_off, z_off) * TWO_PI * 1.3; //play with - multiply 2pi by a const
             var v = p5.Vector.fromAngle(angle);
             v.setMag(2); //play with
             flowfield[index] = v;
