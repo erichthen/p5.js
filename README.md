@@ -1,6 +1,8 @@
 ## lebron_to_ascii  
 
-![](bron/lebron_ascii.png)
+![](bron/lebron_ascii.png)  
+todo: animate the text, maybe do media talking about bron for text  
+
 
 ## falling_sand  
 
