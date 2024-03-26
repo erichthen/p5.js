@@ -6,7 +6,7 @@ class Particle{
         this.pos = createVector(random(width),random(height));
         this.vel = createVector(0,0);
         this.acc = createVector(0,0);
-        this.maxspeed = 6; //play with
+        this.maxspeed = 4; //play with
         
         this.previous_pos = this.pos.copy();
 
@@ -37,12 +37,12 @@ class Particle{
     
        
             colorMode(HSB, 360, 100, 100, 1); 
-            let hueValue = 330; 
+            let hueValue = 330;  //play with
             let sat = map(this.pos.y, 0, height, 50, 100);
 
             let bright = map(this.pos.y, 0, height, 100, 20);
-            strokeWeight(2);
-            stroke(hueValue, sat, bright, 0.1);
+            strokeWeight(2); //play with
+            stroke(hueValue, sat, bright, 0.1 /*play with*/);
             line(this.pos.x, this.pos.y, this.previous_pos.x, this.previous_pos.y);
             this.updatePrevious(); 
             
