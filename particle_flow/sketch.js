@@ -14,7 +14,7 @@ function setup(){
     rows = floor(height / scl);
 
     flowfield = new Array(cols * rows);
-    for (let i = 0; i < 200 /*play with*/; i++){
+    for (let i = 0; i < 500 /*play with*/; i++){
         particles.push(new Particle()); 
     }
     background(255);
