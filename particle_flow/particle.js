@@ -41,7 +41,7 @@ class Particle{
             let sat = map(this.pos.y, 0, height, 50, 100);
 
             let bright = map(this.pos.y, 0, height, 100, 20);
-            strokeWeight(1);
+            strokeWeight(2);
             stroke(hueValue, sat, bright, 0.1);
             line(this.pos.x, this.pos.y, this.previous_pos.x, this.previous_pos.y);
             this.updatePrevious(); 
