@@ -17,4 +17,5 @@ todo: animate the text, maybe do media talking about bron for text
 [video](https://youtu.be/7OiCf2by_Yk)  
 
 ## snowfall  
-![](snowfall/snowfall.png)
+![](snowfall/snowfall.png)  
+![Snowfall gif](snowfall/snowfall.gif)
