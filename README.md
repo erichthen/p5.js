@@ -8,10 +8,10 @@ todo: animate the text, maybe do media talking about bron for text
 
 ![](falling/illustration.png)      
 **falling sand video**  
-[video] (https://youtu.be/9AmTqQETuKI)  
+[] (https://youtu.be/9AmTqQETuKI)  
 
 
 ## particle_flow  
 ![](particle_flow/flow_preview.png)  
 **simulation video**  
-[video](https://youtu.be/0DaMUsPOVCY)
+[video](https://youtu.be/7OiCf2by_Yk)
