@@ -11,7 +11,7 @@ todo: animate the text, maybe do media talking about bron for text
 (https://youtu.be/9AmTqQETuKI)  
 
 
-## particle_flow  
+## flow field illustrated  
 ![](particle_flow/flow_preview.png)  
 **simulation video**  
 [video](https://youtu.be/7OiCf2by_Yk)  
