@@ -6,9 +6,9 @@ todo: animate the text, maybe do media talking about bron for text
 
 ## falling_sand  
 
-!(falling/illustration.png)      
+![](falling/illustration.png)      
 **falling sand video**  
-[] (https://youtu.be/9AmTqQETuKI)  
+(https://youtu.be/9AmTqQETuKI)  
 
 
 ## particle_flow  
