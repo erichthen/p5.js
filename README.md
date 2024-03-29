@@ -21,4 +21,5 @@ todo: animate the text, maybe do media talking about bron for text
 ![Snowfall gif](snowfall/snowfall.gif)  
 
 ## boid flocking simulation  
-![](no_flockin/flocking.png)
+![](no_flockin/flocking.png)  
+todo: make cooler, make video
