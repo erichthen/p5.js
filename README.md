@@ -22,4 +22,4 @@ todo: animate the text, maybe do media talking about bron for text
 
 ## boid flocking simulation  
 ![](no_flockin/flocking.png)  
-todo: make cooler, make video
+todo: make cooler, make sim video
