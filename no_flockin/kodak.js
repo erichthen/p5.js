@@ -31,8 +31,8 @@ class Kodak{
 
     align (boids) {
         
-        let zone_radius = radius_slider.value();  
-        let steering = createVector();
+        let zone_radius = radius_slider.value();  //this is not the raidius of the particle, it is the range in which surrounding particles affect its movement
+        let steering = createVector();            //it is the scope in which particles affect their movement
         let total = 0;
 
         for (let other of boids){
