@@ -18,4 +18,7 @@ todo: animate the text, maybe do media talking about bron for text
 
 ## snowfall w parallax  
 ![](snowfall/snowfall.png)  
-![Snowfall gif](snowfall/snowfall.gif)
+![Snowfall gif](snowfall/snowfall.gif)  
+
+## boid flocking simulation  
+![](no_flockin/flocking.png)
