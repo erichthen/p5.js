@@ -10,6 +10,8 @@ class Kodak{
         this.acc = createVector();
         this.max_force = max_force_slider.value();
         this.max_speed = max_speed_slider.value();
+        this.history = [];
+        this.color = color(255);
 
     }
 
@@ -122,6 +124,7 @@ class Kodak{
         return totalForce;
         }
 
+        
     apply_force(force) {
         this.acc.add(force);
     }
