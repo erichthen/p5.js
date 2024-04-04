@@ -26,4 +26,4 @@ flocking WIP: proximity coloring, color trails, add a predator they will try to 
 
 ## maze generation and solver  
 ![](maze_generation/maze_snapshot.png)  
-todo: debug and finish the solver, maybe use dijkstra alg instead, record generation and solving
+todo: debug and finish a* algorithm, record generation and solving
