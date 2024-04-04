@@ -87,19 +87,11 @@ class Cell {
         var y = this.j * size;
         
         noStroke();
-        fill(0, 250, 0);
+        fill(9, 85, 137);
         rect(x, y, size, size);
     }
 
-    //for solving
-    highlightPath() {
-        var x = this.i * size;
-        var y = this.j * size;
-        
-        noStroke();
-        fill(0, 0, 250); 
-        rect(x, y, size, size);
-    }
+    
 
     estimate(target) {
 
@@ -142,7 +134,7 @@ class Cell {
         var x = this.i * size;
         var y = this.j * size;
 
-        stroke(255);
+        stroke(0);
 
         if (this.walls[0]){
             line(x, y, x + size, y);
@@ -163,7 +155,7 @@ class Cell {
         if (this.visited) {
 
             noStroke();
-            fill(255, 0, 0, 100)
+            fill(0, 153, 153, 100)
             rect(x, y, size, size);
             
         }

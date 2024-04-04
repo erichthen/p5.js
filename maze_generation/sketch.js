@@ -1,6 +1,6 @@
 
 var cols, rows;
-var size = 20;
+var size = 10;
 var cells = [];
 var current;
 
@@ -30,7 +30,7 @@ function setup() {
 
 function draw() {
 
-    background(51);
+    background(255);
 
     for (var i = 0; i < cells.length; i++){
         cells[i].show();
@@ -143,7 +143,7 @@ function keyPressed() {
         let path = a_star(cells[0], cells[cells.length - 1]);
         console.log("Path length: " + path.length); // Check path length
         for (let cell of path) {
-            cell.highlightPath(); 
+            cell.highlight();  //todo: needs to be a diff color than original highlight function
         }
     }
 }
