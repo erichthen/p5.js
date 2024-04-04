@@ -3,10 +3,16 @@ class Cell {
 
     constructor(i, j) {
 
-       this.i = i;
-       this.j = j;
-       this.walls = [true, true, true, true];
-       this.visited = false;
+        this.i = i;
+        this.j = j;
+        this.walls = [true, true, true, true];
+        this.visited = false;
+
+        //for A* s to solve maze
+        this.f = 0;
+        this.g = 0;
+        this.h = 0;
+        this.parent = null;
 
     }
 
@@ -85,6 +91,52 @@ class Cell {
         rect(x, y, size, size);
     }
 
+    //for solving
+    highlightPath() {
+        var x = this.i * size;
+        var y = this.j * size;
+        
+        noStroke();
+        fill(0, 0, 250); 
+        rect(x, y, size, size);
+    }
+
+    estimate(target) {
+
+        return abs(this.i - target.i) + abs(this.j - target.j);
+
+    }
+
+    //for solving
+    walls_blocking_check(neighbor) {
+        
+        const deltaX = neighbor.i - this.i;
+        const deltaY = neighbor.j - this.j;
+
+        if (deltaX === 1) {
+
+            return this.walls[1];
+
+        } else if (deltaX === -1) {
+
+            return this.walls[3];
+
+        }
+
+        if (deltaY === 1) {
+
+            return this.walls[2];
+
+        } 
+        else if (deltaY === -1) {
+
+            return this.walls[0];
+
+        }
+
+        return false;
+    }
+
     show() {
 
         var x = this.i * size;
@@ -111,7 +163,7 @@ class Cell {
         if (this.visited) {
 
             noStroke();
-            fill(255, 0, 255, 100)
+            fill(255, 0, 0, 100)
             rect(x, y, size, size);
             
         }
