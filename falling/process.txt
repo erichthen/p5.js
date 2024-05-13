@@ -1,0 +1,9 @@
+1 - function to make the 2d grid
+
+2- function setup: createCanvas(width, height)
+
+3- function draw: background(0)
+
+4- globals: grid, w = 10, cols, rows
+
+5- set these up in set up, loop to draw grid 
